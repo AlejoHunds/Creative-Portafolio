@@ -1,0 +1,137 @@
+/* ===== RESET ===== */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #ececec;
+}
+
+
+/* ===== NAV ===== */
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  padding: 14px 50px;
+  background: #ffffff;
+  border-radius: 60px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  margin: 0;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  background: #111;
+  color: #fff;
+}
+
+
+/* ===== PROJECTS SECTION ===== */
+
+.projects-section {
+  max-width: 1300px;
+  margin: 120px auto 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 90px;
+  flex-wrap: wrap;
+}
+
+
+/* ===== BASE CARD ===== */
+
+.project-card {
+  width: 240px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-inner {
+  width: 100%;
+  height: 320px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.project-card:hover .card-inner {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+.project-card img {
+  max-width: 80%;
+  max-height: 220px;
+  object-fit: contain;
+}
+
+
+/* ===== TEXT OUTSIDE CARD ===== */
+
+.project-card h3 {
+  margin-top: 28px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+  letter-spacing: 0.5px;
+}
+
+
+/* ===== RED CARD ===== */
+
+.project-card.red .card-inner {
+  background: #e20020;
+}
+
+.project-card.red h3 {
+  color: #333;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1000px) {
+  .projects-section {
+    gap: 50px;
+    align-items: center;
+  }
+
+  .project-card.featured {
+    width: 260px;
+  }
+
+  .project-card.featured .card-inner {
+    height: 360px;
+  }
+}
