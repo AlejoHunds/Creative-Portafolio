@@ -1,0 +1,63 @@
+body{
+margin:0;
+font-family:Helvetica, Arial, sans-serif;
+background:#f6f6f6;
+color:#111;
+}
+
+/* navegación burbuja */
+
+.back-projects{
+position:fixed;
+left:30px;
+top:40px;
+padding:10px 18px;
+border-radius:30px;
+background:white;
+text-decoration:none;
+font-size:14px;
+color:#111;
+box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* intro del proyecto */
+
+.photo-hero{
+max-width:900px;
+margin:140px auto 80px auto;
+text-align:center;
+padding:0 20px;
+}
+
+.photo-hero h1{
+font-size:44px;
+margin-bottom:20px;
+}
+
+.photo-hero p{
+font-size:18px;
+line-height:1.6;
+color:#555;
+}
+
+/* galería */
+
+.photo-gallery{
+columns:3;
+column-gap:20px;
+max-width:1200px;
+margin:auto;
+padding:40px;
+}
+
+.photo-gallery img{
+width:100%;
+margin-bottom:20px;
+border-radius:6px;
+break-inside:avoid;
+transition:transform 0.3s ease;
+}
+
+.photo-gallery img:hover{
+transform:scale(1.02);
+}
